@@ -1,0 +1,50 @@
+Chemical,K59,P60,V81,V83,L87,S92,E94,F108,I110,Y120,S122,E141,F159,A160,V163,V164,N167,Library Source,LOD (uM),Removed Sequences due to duplicate:
+Butonitazene M_100.1,N,H,,,A,F,,V,,A,,A,,,F,,A,L06_N,10,Butonitazene M_100.11 was duplicate of Butonitazene M_100.3
+Butonitazene M_100.3,M,H,L,,,I,,V,,A,,A,,V,F,,,L06_N,50,Menitazene M_100.12 was duplicate of Menitazene M_100.7
+Butonitazene M_100.4,V,H,,,,L,,V,,A,,A,,V,F,,A,L06_N,50,"Menitazene M_100.11, M100.15 was duplicate of Menitazene M_100.10"
+Butonitazene M_100.5,V,,,,V,I,,V,,A,,A,,V,F,,V,L06_N,50,"Nitazene M_N3,5,6,9,10,11,16 was duplicate of Nitazene M_N1"
+Butonitazene M_100.6,V,,,,,M,,V,,A,,A,A,V,F,,A,L06_N,50,Nitazene M_N12 was duplicate of Nitazene M_N7
+Butonitazene M_100.8,I,,,,,I,,V,,A,,A,,,F,,A,L06_N,50,Nitazene M_10.1 was duplicate of Nitazene M_N8
+Butonitazene M_100.9,V,,L,,A,F,,V,,A,,A,,V,,,V,L06_N,10,Nitazene M_100.6 was duplicate of Nitazene M_N14
+Butonitazene M_100.10,N,H,,,A,F,,V,,A,,A,,,F,,V,L06_N,50,Nitazene M_100.8 was duplicate of Nitazene M_100.5
+Butonitazene M_100.12,Q,H,,,,M,,I,,L,A,A,V,,F,,A,L06_N,50,"Protonitazene M_100.2, 100.3 was duplicate of Protonitazene M_100.1"
+Butonitazene M_100.14,I,,,,,L,,V,,A,,T,,,F,,A,L06_N,50,
+Butonitazene M_100.15,V,,,,,L,,V,,A,,A,A,V,F,,A,L06_N,50,
+Butonitazene M_100.16,I,,,,V,M,,V,,A,,T,I,L,I,,A,L06_N,50,Note: highlighted sequences have duplicates across different chemcials
+Isotonitazene M_100.1,V,,,,V,F,,V,,A,,A,,V,,,A,L06_N,50,
+Menitazene M_10.1,Q,H,,,,M,,L,V,A,G,,A,V,,,,L06_N,5,
+Menitazene M_10.2,Q,H,,,,M,,L,V,A,G,,V,V,F,,,L06_N,1,
+Menitazene M_100.1,Q,H,,,,M,,I,V,A,,,V,V,F,,,L06_N,10,Hot5 Background
+Menitazene M_100.2,Q,H,,,,M,,V,V,A,G,,A,V,F,,,L06_N,1,
+Menitazene M_100.5,Q,H,,,,M,,V,,A,G,,A,V,,,,L06_N,1,
+Menitazene M_100.6,Q,H,,,,M,,A,,A,G,,,V,F,,,L06_N,10,
+Menitazene M_100.7,Q,H,,,,M,,A,V,A,G,,V,V,F,,,L06_N,5,
+Menitazene M_100.9,Q,H,,,,M,,L,,A,G,,A,V,F,,,L06_N,1,
+Menitazene M_100.10,Q,H,,,,M,,V,V,A,G,,A,V,,,,L06_N,5,
+Menitazene M_100.13,Q,H,,,,M,,V,,A,G,,A,V,F,,,L06_N,5,
+Metonitazene M_100.1,Q,H,,,,M,,L,V,A,G,,A,V,,,,L06_N,50,
+Metonitazene M_100.3,Q,H,,,,M,,L,V,A,G,,V,V,F,,,L06_N,5,
+Metonitazene M_100.4,Q,H,,,,M,,I,V,A,G,,A,V,F,,,L06_N,50,
+Metonitazene M_100.5,Q,H,,,,M,,V,V,A,G,,A,V,,,,L06_N,50,
+Metonitazene M_100.7,Q,H,,,,M,,L,,A,G,,A,V,F,,,L06_N,50,
+Nitazene M_N1,Q,H,,,,M,,V,,A,G,,A,V,,,,L06_N,5,
+Nitazene M_N7,Q,H,,,,M,,V,,A,A,,A,V,,,,L06_N,5,
+Nitazene M_N8,Q,H,,,,M,,V,,A,,,A,V,,,,L06_N,5,
+Nitazene M_N13,Q,H,,,,M,,V,V,A,G,,A,V,,,,L06_N,10,
+Nitazene M_N14,Q,H,,,,M,,V,,A,G,,V,V,F,,,L06_N,5,
+Nitazene M_10.2,Q,H,,,,M,,L,V,A,G,,A,V,,,,L06_N,5,
+Nitazene M_100.1,Q,H,,,,M,,V,,P,,,V,V,F,,,L06_N,10,
+Nitazene M_100.5,Q,H,,,,M,,L,V,A,G,,V,V,F,,,L06_N,5,
+Nitazene M_100.6,Q,H,,,,M,,V,,A,G,,,V,F,F,,L06_N,50,
+Nitazene M_100.9,I,H,,,,M,,V,,A,,,A,V,,,,L06_N,50,
+Nitazene M_100.10,Q,H,,,,M,,L,,A,G,,A,V,F,,,L06_N,50,
+Nitazene M_100.11,M,H,,,,F,,V,,A,,,,V,F,,,L06_N,50,
+Protonitazene M_100.1,V,,L,W,,A,I,V,,A,,Q,V,V,F,,V,L06_N,100,
+Protonitazene M_100.4,V,,,,,M,,V,,A,,A,A,V,F,,V,L06_N,100,
+Protonitazene M_100.5,Q,H,,,,M,,V,,A,G,,A,V,F,,,L06_N,100,
+Protonitazene M_100.6,V,,,,V,F,,V,,A,,V,,V,,,V,L06_N,50,
+Protonitazene M_100.7,I,,,,,I,,V,,A,,A,,,F,,A,L06_N,100,
+Protonitazene M_100.8,V,,,,,L,,V,,A,,A,A,V,F,,A,L06_N,50,
+Protonitazene M_100.9,V,,,,,M,,V,,A,,A,A,V,F,,A,L06_N,50,
+Protonitazene M_100.10,I,,L,,,M,,V,,A,,A,A,V,F,,A,L06_N,50,
+Protonitazene M_100.11,Q,H,,,,M,,V,,A,G,,A,V,,,,L06_N,50,

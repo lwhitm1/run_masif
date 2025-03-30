@@ -1,0 +1,20 @@
+PYR1 WT Backgroud,,,,,,,,,,,,,,,,,,,,
+Chemical,K59,H60,V81,V83,L87,A89,S92,E94,F108,I110,L117,Y120,E141,F159,A160,V163,N167,Library Source,LOD (uM),Removed Sequences due to duplicate:
+Butonitazene1,Q,P,,,,,F,,V,,R,,,L,,,A,L062,100,N-pyrrolidino Etonitazene3 was duplicate of N-pyrrolidino Etonitazene1
+Butonitazene2,Q,P,,,,,,,A,,V,F,,A,,W,A,L062,50,Nitazene16 was duplicate of Nitazene14
+Butonitazene3,Q,,,,,,F,,V,,V,,,,,F,A,L062,100,
+Butonitazene4,Q,,,,,,M,,V,,V,,,,,W,A,L062,100,
+Butonitazene5,Q,P,,,M,M,,,,,V,A,,A,M,,A,L062,50,
+Butonitazene7,Q,P,,,,,M,,V,,V,F,,,,,A,L062,100,
+Butonitazene8,Q,P,,W,,,V,,,,A,A,,A,I,,,L062,100,
+Ethyleneoxynitazene2,Q,P,,,V,G,,Q,,,,A,,A,,W,,L062,100,
+Menitazene9,Q,P,,,V,G,,Q,,,,A,,M,,W,,L062,50,
+Menitazene15,Q,P,,,V,G,,Q,,,A,A,,,,W,A,L062,50,
+N-desethyl Etonitazene1,Q,,,M,,,,,,,,A,,,I,W,,L062,50,
+N-pyrrolidino Etonitazene1,,P,,,,,F,,V,,V,A,,,,Y,A,L062,100,
+Nitazene9,Q,P,,,V,G,,,,V,,A,,M,,W,,L062,50,
+Nitazene12,Q,,,,,,I,,V,,,A,,A,V,,,L062,5,
+Nitazene13,Q,,,,,,F,,V,,,A,,,I,F,,L062,10,
+Nitazene14,Q,P,,,V,G,,Q,,,A,A,,L,,W,,L062,10,
+Protodesnitazene2,Q,,,,,G,F,,V,,,A,,,I,F,,L062,100,
+Protonitazene1,R,P,,,,G,,,,,,A,,T,,W,A,L062,100,
