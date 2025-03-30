@@ -1,6 +1,7 @@
 # run_masif
 
 - Everything should be setup to run on alpine.
+	- [Masif neosurf container link](https://o365coloradoedu-my.sharepoint.com/:u:/g/personal/liwh2139_colorado_edu/EeNtrOuEF-dHm0l-KRWxSLEBABXxh7sGGzf-sWgCnkE46w?e=Z1KveP)
 - You'll need to copy the run_masif_batch.sh script from my projects directory:
 
   cp /projects/liwh2139/masif/run_masif_batch.sh </path/where/you/want/it/>
