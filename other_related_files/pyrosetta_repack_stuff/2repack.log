@@ -1,0 +1,807 @@
+(pyrosetta) lwhitm1@Lindseys-MacBook-Pro t-SNE % python 2repack_biosensor.py -p robetta_predictions -o 2repack_biosensors -c 2repack_biosensor.csv -n 3
+core.init: Checking for fconfig files in pwd and ./rosetta/flags
+core.init: Rosetta version: PyRosetta4.conda.m1.cxx11thread.serialization.python313.Release r393 2025.06+release.e5e4b278be e5e4b278bef53bc7e6fd8db181383a8adf7a3c9a http://www.pyrosetta.org 2025-01-23T18:15:53
+core.init: Rosetta extras: [cxx11thread, serialization]
+core.init: command: PyRosetta -ignore_unrecognized_res 1 -ex1 -ex2aro -database /Users/lwhitm1/anaconda3/envs/pyrosetta/lib/python3.13/site-packages/pyrosetta/database
+basic.random.init_random_generator: 'RNG device' seed mode, using '/dev/urandom', seed=-256795342 seed_offset=0 real_seed=-256795342 thread_index=0
+basic.random.init_random_generator: RandomGenerator:init: Normal mode, seed=-256795342 RG_type=mt19937
+core.scoring.etable: Starting energy table calculation
+core.scoring.etable: smooth_etable: changing atr/rep split to bottom of energy well
+core.scoring.etable: smooth_etable: spline smoothing lj etables (maxdis = 6)
+core.scoring.etable: smooth_etable: spline smoothing solvation etables (max_dis = 6)
+core.scoring.etable: Finished calculating energy tables.
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBPoly1D.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBFadeIntervals.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBEval.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/DonStrength.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/AccStrength.csv
+core.chemical.GlobalResidueTypeSet: Finished initializing fa_standard residue type set.  Created 985 residue types
+core.chemical.GlobalResidueTypeSet: Total time to initialize 0.321365 seconds.
+basic.io.database: Database file opened: scoring/score_functions/rama/fd/all.ramaProb
+basic.io.database: Database file opened: scoring/score_functions/rama/fd/prepro.ramaProb
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.all.txt
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.gly.txt
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.pro.txt
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.valile.txt
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/P_AA
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/P_AA_n
+core.scoring.P_AA: shapovalov_lib::shap_p_aa_pp_smooth_level of 1( aka low_smooth ) got activated.
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/shapovalov/10deg/kappa131/a20.prop
+core.import_pose.import_pose: File 'robetta_predictions/Nitazene_M_N13.pdb' automatically determined to be of type PDB
+core.conformation.Conformation: Found disulfide between residues 573 754
+basic.io.database: Database file opened: scoring/score_functions/elec_cp_reps.dat
+core.scoring.elec.util: Read 40 countpair representative atoms
+core.pack.dunbrack.RotamerLibrary: shapovalov_lib_fixes_enable option is true.
+core.pack.dunbrack.RotamerLibrary: shapovalov_lib::shap_dun10_smooth_level of 1( aka lowest_smooth ) got activated.
+core.pack.dunbrack.RotamerLibrary: Binary rotamer library selected: /Users/lwhitm1/anaconda3/envs/pyrosetta/lib/python3.13/site-packages/pyrosetta/database/rotamer/shapovalov/StpDwn_0-0-0/Dunbrack10.lib.bin
+core.pack.dunbrack.RotamerLibrary: Using Dunbrack library binary file '/Users/lwhitm1/anaconda3/envs/pyrosetta/lib/python3.13/site-packages/pyrosetta/database/rotamer/shapovalov/StpDwn_0-0-0/Dunbrack10.lib.bin'.
+core.pack.dunbrack.RotamerLibrary: Dunbrack 2010 library took 0.052277 seconds to load from binary
+protocols.minimization_packing.PackRotamersMover: [ WARNING ] undefined ScoreFunction -- creating a default one
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 7941 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+basic.thread_manager.RosettaThreadManager: Creating a thread pool of 1 threads.
+basic.thread_manager.RosettaThreadPool: Launched 0 new threads.
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 7941 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 7941 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Nitazene_M_100.6.pdb' automatically determined to be of type PDB
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13715 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13863 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13863 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Menitazene_M_100.7.pdb' automatically determined to be of type PDB
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 14239 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 14318 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 14318 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Menitazene_M_100.6.pdb' automatically determined to be of type PDB
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 11033 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 11018 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 11018 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Butonitazene_M_100.6.pdb' automatically determined to be of type PDB
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 14823 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 14751 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 14751 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Butonitazene_M_100.4.pdb' automatically determined to be of type PDB
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13624 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13624 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13624 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Nitazene_M_100.5.pdb' automatically determined to be of type PDB
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 12750 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 12750 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 12750 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Menitazene_M_100.5.pdb' automatically determined to be of type PDB
+core.conformation.Conformation: Found disulfide between residues 258 801
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13270 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13270 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13270 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Butonitazene_M_100.5.pdb' automatically determined to be of type PDB
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13254 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13254 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13254 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Butonitazene_M_100.1.pdb' automatically determined to be of type PDB
+core.conformation.Conformation: Found disulfide between residues 65 620
+core.conformation.Conformation: Found disulfide between residues 392 754
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13281 rotamers at 901 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13257 rotamers at 901 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13257 rotamers at 901 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Nitazene_M_N8.pdb' automatically determined to be of type PDB
+core.conformation.Conformation: Found disulfide between residues 246 620
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 11554 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 11554 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 11554 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Nitazene_M_100.1.pdb' automatically determined to be of type PDB
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 14324 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 14194 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 14194 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Nitazene_M_N14.pdb' automatically determined to be of type PDB
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 12263 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 12310 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 12310 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Menitazene_M_100.2.pdb' automatically determined to be of type PDB
+core.conformation.Conformation: Found disulfide between residues 65 801
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 12753 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 12753 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 12753 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Protonitazene_M_100.11.pdb' automatically determined to be of type PDB
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13189 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13189 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13189 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Nitazene_M_10.2.pdb' automatically determined to be of type PDB
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 12159 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 12223 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 12223 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Protonitazene_M_100.10.pdb' automatically determined to be of type PDB
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 14264 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 14264 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 14264 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Butonitazene_M_100.3.pdb' automatically determined to be of type PDB
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 14577 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 14577 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 14577 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Protonitazene_M_100.7.pdb' automatically determined to be of type PDB
+core.conformation.Conformation: Found disulfide between residues 573 754
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 12645 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 12645 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 12645 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Protonitazene_M_100.6.pdb' automatically determined to be of type PDB
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 15004 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 15004 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 15004 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Protonitazene_M_100.4.pdb' automatically determined to be of type PDB
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 14477 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 14473 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 14473 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Isotonitazene_M_100.1.pdb' automatically determined to be of type PDB
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 12630 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 12600 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 12600 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Protonitazene_M_100.5.pdb' automatically determined to be of type PDB
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 14505 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 14510 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 14510 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Protonitazene_M_100.1.pdb' automatically determined to be of type PDB
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 12715 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 12715 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 12715 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Menitazene_M_10.1.pdb' automatically determined to be of type PDB
+core.conformation.Conformation: Found disulfide between residues 392 754
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13123 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13249 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13249 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Nitazene_M_100.11.pdb' automatically determined to be of type PDB
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 11231 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 11267 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 11267 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Nitazene_M_100.10.pdb' automatically determined to be of type PDB
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13202 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13185 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13185 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Menitazene_M_100.13.pdb' automatically determined to be of type PDB
+core.conformation.Conformation: Found disulfide between residues 258 801
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 14034 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 14045 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 14045 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Menitazene_M_100.10.pdb' automatically determined to be of type PDB
+core.conformation.Conformation: Found disulfide between residues 211 392
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13150 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13150 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13150 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Protonitazene_M_100.8.pdb' automatically determined to be of type PDB
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 15412 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 15469 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 15469 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Protonitazene_M_100.9.pdb' automatically determined to be of type PDB
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 11534 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 11534 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 11534 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Metonitazene_M_100.7.pdb' automatically determined to be of type PDB
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 10751 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 10751 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 10751 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Nitazene_M_N7.pdb' automatically determined to be of type PDB
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 11355 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 11355 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 11355 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Butonitazene_M_100.12.pdb' automatically determined to be of type PDB
+core.conformation.Conformation: Found disulfide between residues 246 427
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 12840 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 12844 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 12844 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Metonitazene_M_100.4.pdb' automatically determined to be of type PDB
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 12472 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 12406 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 12406 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Butonitazene_M_100.10.pdb' automatically determined to be of type PDB
+core.conformation.Conformation: Found disulfide between residues 30 573
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 10108 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 10139 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 10139 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Metonitazene_M_100.5.pdb' automatically determined to be of type PDB
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 14870 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 14870 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 14870 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Nitazene_M_100.9.pdb' automatically determined to be of type PDB
+core.conformation.Conformation: Found disulfide between residues 30 573
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13438 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13438 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13438 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Butonitazene_M_100.8.pdb' automatically determined to be of type PDB
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 12720 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 12711 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 12711 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Metonitazene_M_100.1.pdb' automatically determined to be of type PDB
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 12034 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 12034 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 12034 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Nitazene_M_N1.pdb' automatically determined to be of type PDB
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 14313 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 14229 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 14229 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Butonitazene_M_100.15.pdb' automatically determined to be of type PDB
+core.conformation.Conformation: Found disulfide between residues 573 754
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13222 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13294 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13294 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Butonitazene_M_100.14.pdb' automatically determined to be of type PDB
+core.conformation.Conformation: Found disulfide between residues 392 573
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13562 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13599 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 13668 rotamers at 903 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Menitazene_M_100.9.pdb' automatically determined to be of type PDB
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 15561 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 15561 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 15561 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Butonitazene_M_100.9.pdb' automatically determined to be of type PDB
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 9692 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 9692 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 9692 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Butonitazene_M_100.16.pdb' automatically determined to be of type PDB
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 11676 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 11676 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 11676 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.import_pose.import_pose: File 'robetta_predictions/Metonitazene_M_100.3.pdb' automatically determined to be of type PDB
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 14508 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 14515 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+core.pack.task: Packer task: initialize from command line()
+core.pack.pack_rotamers: built 14515 rotamers at 905 positions.
+core.pack.pack_rotamers: Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.rotamer_set.RotamerSets: Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
