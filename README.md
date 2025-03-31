@@ -78,3 +78,15 @@
 
 	- The script will take the pdb directory and loop through and run all the structures through the precompute stages of the masif neosurf protocol. 
 		- masif only accepts files with 4-digit ids/pdb like codes. The script will simlink the input pdbs and mask the original names with 4-digit numerical codes. It is set up to run on chain A of the protein.
+
+  - Other info for pulling npy 
+	- Currently set to fill missing values/NaNs with 0s.
+	
+	- extract_descriptors_to_csv.py can take in a supplementary metadata file that should be of the format:
+	
+		- structure,sequence,ligand_name,ligand_family
+	
+	- The structure column must match the original structure names in pdb_mapping.txt.
+	- Additional columns (e.g., sequence, ligand_name, ligand_family) are optional and customizable.
+	- Metadata will be merged into the final descriptors CSV to enable downstream visualization (e.g., coloring t-SNE plots by ligand family).
+	- The t-sne script will take in that csv and output a png and an additional csv with point coordinates.
